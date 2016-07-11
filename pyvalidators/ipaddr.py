@@ -5,8 +5,9 @@ import re
 class IPAddrValidator(object):
     """IP address validator."""
 
-    IP_ADDRESS_REGEX = ('((?:(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}'
-                        '(?:25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d))))')
+    IP_ADDRESS_REGEX = ('^(((\d{1,2})|(1\d{2,2})|(2[0-4][0-9])|'
+                        '(25[0-5]))\.){3,3}((\d{1,2})|(1\d{2,2})|'
+                        '(2[0-4][0-9])|(25[0-5]))$')
 
     @classmethod
     def is_valid(cls, ipaddr):
