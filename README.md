@@ -3,6 +3,9 @@
 * phone number validator
 * ip address validator
 
+## install
+
+    pip install pyvalidators
 
 
 ## phone validator
