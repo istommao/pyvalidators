@@ -12,17 +12,15 @@ import re
 class PhoneValidator(object):
     """Phone validator."""
 
-    CHINA_PHONE_REGEX = ('(^(13\d|15[^4,\D]|17[13678]|18\d)\d{8}|'
-                         '170[^346,\D]\d{7})$')
+    CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$'
 
     CHINA_MOBILE_REGEX = ('(^1(3[4-9]|4[7]|5[0-27-9]|7[8]|8[2-478])\\d{8}$)|'
                           '(^1705\\d{7}$)')
 
-    CHINA_UNICOM_REGEX = ('(^1(3[4-9]|4[7]|5[0-27-9]|7[8]|8[2-478])\\d{8}$)|'
-                          '(^1705\\d{7}$)')
+    CHINA_UNICOM_REGEX = ('(^1(3[0-2]|4[5]|5[56]|7[6]|8[56])\\d{8}$)|'
+                          '(^1709\\d{7}$)')
 
-    CHINA_TELECOM_REGEX = ('(^1(3[0-2]|4[5]|5[56]|7[6]|8[56])\\d{8}$)|'
-                           '(^1709\\d{7}$)')
+    CHINA_TELECOM_REGEX = '(^1(33|53|77|8[019])\\d{8}$)|(^1700\\d{7}$)'
 
     @classmethod
     def is_valid(cls, phone):
