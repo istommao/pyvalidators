@@ -9,10 +9,19 @@
 import re
 
 
+CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$'
+
+
+def is_valid_phone(phone):
+    """Validate phone is valid."""
+    if re.match(CHINA_PHONE_REGEX, phone):
+        return True
+    else:
+        return False
+
+
 class PhoneValidator(object):
     """Phone validator."""
-
-    CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$'
 
     CHINA_MOBILE_REGEX = ('(^1(3[4-9]|4[7]|5[0-27-9]|7[8]|8[2-478])\\d{8}$)|'
                           '(^1705\\d{7}$)')
@@ -25,10 +34,7 @@ class PhoneValidator(object):
     @classmethod
     def is_valid(cls, phone):
         """Validate phone number is valid."""
-        if re.match(cls.CHINA_PHONE_REGEX, phone):
-            return True
-        else:
-            return False
+        return is_valid_phone(phone)
 
     @classmethod
     def number_segment(cls, phone):
@@ -46,8 +52,3 @@ class PhoneValidator(object):
             result = '未知号码段'
 
         return result
-
-
-def is_valid_phone(phone):
-    """Validate phone is valid."""
-    return PhoneValidator.is_valid(phone)
