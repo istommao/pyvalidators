@@ -2,7 +2,8 @@
 
 from unittest import TestCase
 
-from pyvalidators import is_valid_ipaddr, is_valid_phone
+from pyvalidators.ipaddr import is_valid_ipaddr
+from pyvalidators.phone import is_valid_phone
 
 
 class SimpleUseageTestCase(TestCase):

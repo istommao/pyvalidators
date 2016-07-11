@@ -10,14 +10,14 @@
 
 ## simple useage
 
-    >>> from pyvalidators import is_valid_phone
+    >>> from pyvalidators.phone import is_valid_phone
     >>> is_valid_phone('18068823333')
     True
     >>> is_valid_phone('1068823333')
     False
     ...
 
-    >>> from pyvalidators import is_valid_ipaddr
+    >>> from pyvalidators.ipaddr import is_valid_ipaddr
     >>> is_valid_ipaddr('127.0.0.1')
     True
     >>> is_valid_ipaddr('127.0.0.sdf')
