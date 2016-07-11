@@ -1,18 +1,7 @@
 """pyvalidators."""
 
-
-from pyvalidators.phone import PhoneValidator
-from pyvalidators.ipaddr import IPAddrValidator
-
-
-def is_valid_phone(phone):
-    """Validate phone is valid."""
-    return PhoneValidator.is_valid(phone)
-
-
-def is_valid_ipaddr(ipaddr):
-    """Validate ip address is valid."""
-    return IPAddrValidator.is_valid(ipaddr)
+from pyvalidators.phone import PhoneValidator, is_valid_phone
+from pyvalidators.ipaddr import IPAddrValidator, is_valid_ipaddr
 
 
 __all__ = [

@@ -46,3 +46,8 @@ class PhoneValidator(object):
             result = '未知号码段'
 
         return result
+
+
+def is_valid_phone(phone):
+    """Validate phone is valid."""
+    return PhoneValidator.is_valid(phone)

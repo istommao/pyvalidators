@@ -16,3 +16,8 @@ class IPAddrValidator(object):
             return True
         else:
             return False
+
+
+def is_valid_ipaddr(ipaddr):
+    """Validate ip address is valid."""
+    return IPAddrValidator.is_valid(ipaddr)
