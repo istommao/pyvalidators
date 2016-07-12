@@ -24,6 +24,13 @@
     False
     ...
 
+    >>> from pyvalidators.email import is_valid_email
+    >>> is_valid_email('12345@qq.com')
+    True
+    >>> is_valid_email('1235')
+    False
+    ...
+
 ## phone validator
 
     >>> from pyvalidators.phone import PhoneValidator
