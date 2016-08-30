@@ -1,3 +1,4 @@
+# coding: utf-8
 """phone validator.
     13[0-9], 14[5,7], 15[0, 1, 2, 3, 5, 6, 7, 8, 9], 17[6, 7, 8], 18[0-9], 170[0-9]
 
@@ -14,10 +15,7 @@ CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$'
 
 def is_valid_phone(phone):
     """Validate phone is valid."""
-    if re.match(CHINA_PHONE_REGEX, phone):
-        return True
-    else:
-        return False
+    return re.match(CHINA_PHONE_REGEX, phone)
 
 
 class PhoneValidator(object):

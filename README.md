@@ -2,6 +2,8 @@
 
 * phone number validator
 * ip address validator
+* email address validator
+* id card validator
 
 ## install
 
@@ -28,6 +30,12 @@
     >>> is_valid_email('12345@qq.com')
     True
     >>> is_valid_email('1235')
+    False
+
+    >>> from pyvalidators.idcard import is_valid_idcard
+    >>> is_valid_idcard('220582197707198132')
+    True
+    >>> is_valid_idcard('1235')
     False
     ...
 
