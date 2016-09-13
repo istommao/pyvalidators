@@ -34,3 +34,4 @@ class SimpleUseageTestCase(TestCase):
         self.assertFalse(is_valid_idcard('188002333'))
         self.assertTrue(is_valid_idcard('220582197707198132'))
         self.assertTrue(is_valid_idcard('330200197307222708'))
+        self.assertTrue(is_valid_idcard(330200197307222708))
