@@ -7,6 +7,8 @@
     CHINA TELECOM: 133,153,180,181,189,177,1700
 
 """
+from __future__ import unicode_literals
+
 import re
 
 

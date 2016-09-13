@@ -1,12 +1,15 @@
 language: python
 python:
-  - "3.5"
+  - 2.7
+  - 3.3
+  - 3.4
+  - 3.5
 install:
   - pip install codecov
 before_script:
   - pip install pytest-cov
 script:
-  - py.test --cov=pyvalidators tests/
+  - py.test --cov=pyvalidators
 
 after_success:
   - codecov

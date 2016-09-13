@@ -1,4 +1,6 @@
+# coding: utf-8
 """pyvalidators phone number test case."""
+from __future__ import unicode_literals
 
 from unittest import TestCase
 
