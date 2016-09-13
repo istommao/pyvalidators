@@ -1,16 +1,22 @@
+[![Build Status](https://travis-ci.org/istommao/pyvalidators.svg?branch=master)](https://travis-ci.org/istommao/pyvalidators)
+[![codecov](https://codecov.io/gh/istommao/pyvalidators/branch/master/graph/badge.svg)](https://codecov.io/gh/istommao/pyvalidators)
+[![PyPI](https://img.shields.io/pypi/v/pyvalidators.svg)](https://pypi.python.org/pypi/pyvalidators)
+
 # Common validators use python
+
+## Feature
 
 * phone number validator
 * ip address validator
 * email address validator
 * id card validator
 
-## install
+## Install
 
     pip install pyvalidators
 
 
-## simple useage
+## Simple Usage
 
     >>> from pyvalidators.phone import is_valid_phone
     >>> is_valid_phone('18068823333')
@@ -39,7 +45,7 @@
     False
     ...
 
-## phone validator
+## Phone validator
 
     >>> from pyvalidators.phone import PhoneValidator
     >>> PhoneValidator.is_valid('18068823333')
@@ -57,7 +63,7 @@
     ...
 
 
-## ip address validator
+## Ip address validator
 
     >>> from pyvalidators.ipaddr import IPAddrValidator
     >>> IPAddrValidator.is_valid('127.0.0.1')
