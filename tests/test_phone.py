@@ -22,6 +22,9 @@ class PhoneTestCase(TestCase):
         self.assertEqual(PhoneValidator.number_segment('188002333'),
                          '无效的号码')
 
+        self.assertEqual(PhoneValidator.number_segment('17698088773'),
+                         '中国联通')
+
         self.assertEqual(PhoneValidator.number_segment('15868823333'),
                          '中国移动')
         self.assertEqual(PhoneValidator.number_segment('18068823333'),

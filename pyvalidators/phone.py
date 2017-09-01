@@ -12,7 +12,7 @@ from __future__ import unicode_literals
 import re
 
 
-CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|8[0-9]|70)\\d{8}$'
+CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|7[6-8]|8[0-9]|70)\\d{8}$'
 
 
 def is_valid_phone(phone):
@@ -39,7 +39,7 @@ class PhoneValidator(object):
     @classmethod
     def number_segment(cls, phone):
         """Check phone number segment."""
-        if not cls.is_valid(phone):
+        if cls.is_valid(phone) is None:
             return '无效的号码'
 
         if re.match(cls.CHINA_MOBILE_REGEX, phone):
