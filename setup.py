@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 INSTALL_REQUIRES = [
 ]
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 setup(
     name='pyvalidators',
