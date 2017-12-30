@@ -71,3 +71,12 @@
     >>> IPAddrValidator.is_valid('127.0.0.sdf')
     False
     ...
+
+## Email address validator
+
+    >>> from pyvalidators.email import is_valid_email
+    >>> is_valid_email('www@gmail.com')
+    True
+    >>> is_valid_email('@gmail.com')
+    False
+    ...
