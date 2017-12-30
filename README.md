@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/istommao/pyvalidators.svg?branch=master)](https://travis-ci.org/istommao/pyvalidators)
 [![codecov](https://codecov.io/gh/istommao/pyvalidators/branch/master/graph/badge.svg)](https://codecov.io/gh/istommao/pyvalidators)
 [![PyPI](https://img.shields.io/pypi/v/pyvalidators.svg)](https://pypi.python.org/pypi/pyvalidators)
+[![PyPI](https://img.shields.io/pypi/pyversions/Django.svg?style=plastic)](https://pypi.python.org/pypi/pyvalidators)
 
 # Common validators use python
 
