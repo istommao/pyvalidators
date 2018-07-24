@@ -12,7 +12,7 @@ from __future__ import unicode_literals
 import re
 
 
-CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|7[136-8]|8[0-9]|70)\\d{8}$'
+CHINA_PHONE_REGEX = '^1(3[0-9]|4[57]|5[0-35-9]|7[1356-8]|8[0-9]|70)\\d{8}$'
 
 
 def is_valid_phone(phone):
