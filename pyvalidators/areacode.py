@@ -1,4 +1,7 @@
+# coding: utf-8
 """idcard area code."""
+from __future__ import unicode_literals
+
 
 AREA_CODES = {
     '110000': '北京市',
