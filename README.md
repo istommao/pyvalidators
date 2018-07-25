@@ -12,6 +12,11 @@
 * email address validator
 * id card validator
 
+## TODO
+
+* file type validation
+* http url validation
+
 ## Install
 
     pip install pyvalidators
